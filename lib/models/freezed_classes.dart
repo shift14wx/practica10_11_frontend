@@ -12,5 +12,11 @@ abstract class Owner with _$Owner {
 @freezed
 abstract class Pet with _$Pet{
   const factory Pet( int codigo_mascota, String nombre, DateTime fecha_nacimiento, bool sexo, double peso,String color, String comentarios, int codigo_cliente, int codigo_especie) = _Pet;
-  factory Pet.fromJson(Map<String,dynamic> json) => _$PetFromJson();
+  factory Pet.fromJson(Map<String,dynamic> json) => _$PetFromJson(json);
+}
+
+@freezed
+abstract class Specie with _$Specie{
+  const factory Specie( int codigo_especie,String especie ) = _Specie;
+  factory Specie.fromJson( Map<String, dynamic> json ) => _$SpecieFromJson(json);
 }

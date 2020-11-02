@@ -20,6 +20,12 @@ abstract class _PetStore with Store{
   Future<void> getPets () async {
     isLoading = true;
     listPet = await petService.getPets();
+    isLoading = false;
+  }
+
+  @action
+  Future<bool> delete( int id ) async {
+    return await petService.delete(id);
   }
 
 }

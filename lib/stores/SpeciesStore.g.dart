@@ -1,6 +1,6 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'PetStore.dart';
+part of 'SpeciesStore.dart';
 
 // **************************************************************************
 // StoreGenerator
@@ -8,8 +8,8 @@ part of 'PetStore.dart';
 
 // ignore_for_file: non_constant_identifier_names, unnecessary_brace_in_string_interps, unnecessary_lambdas, prefer_expression_function_bodies, lines_longer_than_80_chars, avoid_as, avoid_annotating_with_dynamic
 
-mixin _$PetStore on _PetStore, Store {
-  final _$isLoadingAtom = Atom(name: '_PetStore.isLoading');
+mixin _$SpeciesStore on _SpeciesStores, Store {
+  final _$isLoadingAtom = Atom(name: '_SpeciesStores.isLoading');
 
   @override
   bool get isLoading {
@@ -24,40 +24,33 @@ mixin _$PetStore on _PetStore, Store {
     });
   }
 
-  final _$listPetAtom = Atom(name: '_PetStore.listPet');
+  final _$listSpeciesAtom = Atom(name: '_SpeciesStores.listSpecies');
 
   @override
-  List<Pet> get listPet {
-    _$listPetAtom.reportRead();
-    return super.listPet;
+  List<Specie> get listSpecies {
+    _$listSpeciesAtom.reportRead();
+    return super.listSpecies;
   }
 
   @override
-  set listPet(List<Pet> value) {
-    _$listPetAtom.reportWrite(value, super.listPet, () {
-      super.listPet = value;
+  set listSpecies(List<Specie> value) {
+    _$listSpeciesAtom.reportWrite(value, super.listSpecies, () {
+      super.listSpecies = value;
     });
   }
 
-  final _$getPetsAsyncAction = AsyncAction('_PetStore.getPets');
+  final _$getSpeciesAsyncAction = AsyncAction('_SpeciesStores.getSpecies');
 
   @override
-  Future<void> getPets() {
-    return _$getPetsAsyncAction.run(() => super.getPets());
-  }
-
-  final _$deleteAsyncAction = AsyncAction('_PetStore.delete');
-
-  @override
-  Future<bool> delete(int id) {
-    return _$deleteAsyncAction.run(() => super.delete(id));
+  Future<void> getSpecies() {
+    return _$getSpeciesAsyncAction.run(() => super.getSpecies());
   }
 
   @override
   String toString() {
     return '''
 isLoading: ${isLoading},
-listPet: ${listPet}
+listSpecies: ${listSpecies}
     ''';
   }
 }
